@@ -288,18 +288,34 @@ TEST(Vektoriaus_Modifiers_Funkciju_Testavimas, Insert_Funkcija) {
     EXPECT_EQ(v[2], 2);
 }
 
-TEST(Vektoriaus_Modifiers_Funkciju_Testavimas, Insert_Range_Funkcija) {
+TEST(Vektoriaus_Modifiers_Funkciju_Testavimas, Erase_Funkcija_Pagal_Pozicija) {
     ManoVector<int> v;
     v.push_back(1);
     v.push_back(2);
-    v.insert_range(1, 2, 3);
-    EXPECT_EQ(v.size(), 4);
+    v.push_back(3);
+    v.erase(1);
+    EXPECT_EQ(v.size(), 2);
     EXPECT_EQ(v[0], 1);
     EXPECT_EQ(v[1], 3);
-    EXPECT_EQ(v[2], 3);
-    EXPECT_EQ(v[3], 2);
 }
 
+TEST(Vektoriaus_Modifiers_Funkciju_Testavimas, Erase_Funkcija) {
+    ManoVector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+
+    int* pirmas_elementas_salinimui = v.data() + 1;
+    int* paskutinis_elementas_salinimui = v.data() + 3;
+    int* result = v.erase(pirmas_elementas_salinimui, paskutinis_elementas_salinimui);
+
+    EXPECT_EQ(v.size(), 3);
+    EXPECT_EQ(v[0], 1);
+    EXPECT_EQ(v[1], 4);
+    EXPECT_EQ(v[2], 5);
+}
 
 int main(int argc, char** argv) {
     // Initialize Google Test framework

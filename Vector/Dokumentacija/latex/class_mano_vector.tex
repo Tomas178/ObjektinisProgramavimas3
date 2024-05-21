@@ -1,0 +1,663 @@
+\doxysection{Mano\+Vector\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_mano_vector}{}\label{class_mano_vector}\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+
+
+Vektoriaus klasė pritaikyta šitai programai.  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_mano_vector_a9a9bc74965a27d2effc8406c9d446a13}{max\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina maksimalų galimą vektoriaus dydį. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector_aa9b6f8b6ab9685e40b467345b1733615}{Mano\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Default\textquotesingle{}inis konstruktorius. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector_a913f0d2381b0359a3e5d10f3ce47ccc3}{Mano\+Vector}} (std\+::initializer\+\_\+list$<$ T $>$ il)
+\begin{DoxyCompactList}\small\item\em initialiazer\+\_\+list konstrukroius \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector_a14be0833028f0811d8ee44f10cf05743}{Mano\+Vector}} (const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$ \&Kitas\+\_\+\+Vektorius)
+\begin{DoxyCompactList}\small\item\em Kopijavimo konstruktorius. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector_ac341f5e059f404f57599b9ac0cee297c}{Mano\+Vector}} (\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \&\&Kitas\+\_\+\+Vektorius) noexcept
+\begin{DoxyCompactList}\small\item\em Move konstruktorius. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector_a7f9572eccdf885fa8a05cd11a6eeba82}{\texorpdfstring{$\sim$}{\string~}\+Mano\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em \doxylink{class_mano_vector}{Mano\+Vector} destrukroius. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \& \mbox{\hyperlink{class_mano_vector_a3ab3e5131d802bc377d714afef0354d3}{operator=}} (const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \&Kitas\+\_\+\+Vektorius)
+\begin{DoxyCompactList}\small\item\em Kopijavimo operatorius. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \& \mbox{\hyperlink{class_mano_vector_aa65a97a6164645fcf558fa71de76c2b1}{operator=}} (\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \&\&Kitas\+\_\+\+Vektorius)
+\begin{DoxyCompactList}\small\item\em Move operatorius. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_mano_vector_a8bcab0ba0f0b955b97676e658e098a36}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int indeksas)
+\begin{DoxyCompactList}\small\item\em Operatorius, kuris grąžina nurodytą elementą. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_mano_vector_ae7e06890d62bb4157e22829bdd7b42c1}{operator\mbox{[}$\,$\mbox{]}}} (unsigned int indeksas) const
+\begin{DoxyCompactList}\small\item\em Operatorius, kuris grąžina nurodytą elementą. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_mano_vector_a29a565e738f89190928fbf2764f003d4}{at}} (unsigned int indeksas)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina nurodytą elementą. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_mano_vector_aa2d1b65f95616705d6e21d97b9e6cdf5}{at}} (unsigned int indeksas) const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina nurodytą elementą. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_mano_vector_aaec80242b4db7fad0f4b0297033209aa}{front}} ()
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina pirmą elementą. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_mano_vector_ac4f83bcde4bc108430529f37f92a1a9d}{front}} () const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina pirmą elementą. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_mano_vector_a61c1dc79fa73793db8665dc6954a46d6}{back}} ()
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina paskutinį elementą. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_mano_vector_ab84286a5f57758c9f54e27250b8d1442}{back}} () const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina paskutinį elementą. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a68cf29767008e43684d51a2193d710cf}{data}} () noexcept
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina rodyklę į duomenis. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a4410ad8472cb4efa67f8b3e3aefc5f5c}{begin}} () noexcept
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina rodyklę į pirmą vektoriaus elementą. \end{DoxyCompactList}\item 
+const T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a961f948fe7918eb23b9296d9c4e8bb16}{begin}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina konstantinę rodyklę į pirmą vektoriaus elementą. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a1ee52902a8b056f4712f2624de7fe32e}{end}} () noexcept
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina rodyklę į vektoriaus pabaigą. \end{DoxyCompactList}\item 
+const T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_aeba1eb378d12d29b017f0afe3a0ed798}{end}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina konstantinę rodyklę į vektoriaus pabaigą. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_mano_vector_aee38208a5d387f29c881f4c583023803}{capacity}} () const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina vektoriaus talpą. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_mano_vector_a76c4fc5fe2698edd188c553870ee4a3c}{size}} () const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri grąžina vektoriaus dydį. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mano_vector_ab8671389513591cd5fb55481f3a4aaa6}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri patikrina ar vektorius tuščias. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_a8e68eddd6f7d466c332e239c940aceef}{reserve}} (unsigned int nauja\+\_\+talpa)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri rezervuoja vietos vektoriuje. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_ae538ecddbadcd94a5a0db692312b7690}{shrink\+\_\+to\+\_\+fit}} ()
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri sumažina vektoriaus talpą iki vektoriaus dydžio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_abc41c5ae62fa8b0972d9796b83e0c916}{assign}} (unsigned int n, const T \&value)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri priskiria nurodytą elementą nurodytam kiekiui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_a75f9c8ba96421cd4dbe739edc5a67d54}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Funkcija, išvalanti visą vektorių \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_aaabe8090e07d75c6f1940d2eea9f1ea7}{push\+\_\+back}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri prideda elementą į vektoriaus pabaigą. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_ade0c70eadc8c71e8fc20c217b74782e1}{insert}} (unsigned int indeksas, const T \&value)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri prideda elementą į nurodytą poziciją. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a7491c687ef55f7cc4a782bc79bd10b01}{emplace}} (unsigned int indeksas, T \&\&value)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri prideda elementą į nurodytą poziciją. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_mano_vector_a88beaf5d4397254299cf079f8039e41d}{emplace\+\_\+back}} (T \&\&value)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri prideda elementą į vektoriaus pabaigą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_a108bdc1c2733c7d8b658ad6ce405e30a}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri pašalina elementą iš \doxylink{class_mano_vector}{Mano\+Vector} pabaigos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_aac00e134d7bd4d70397103c60b17b32f}{resize}} (unsigned int naujas\+\_\+dydis)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri pakeičia \doxylink{class_mano_vector}{Mano\+Vector} dydį į nurodytą dydį. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mano_vector_af8ca0e59119387d1cde7bdfe3d3f4433}{swap}} (\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \&Kitas\+\_\+\+Vektorius)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri sukeičia du vektorius vietomis. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a7a1582500030bc6533a84e1210c9195e}{erase}} (unsigned int indeksas)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri išmeta nurodytą elementą. \end{DoxyCompactList}\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector_a5f355bf104c9c979df91bc5736141bc5}{erase}} (T \texorpdfstring{$\ast$}{*}pirmas\+\_\+elementas, T \texorpdfstring{$\ast$}{*}paskutinis\+\_\+elementas)
+\begin{DoxyCompactList}\small\item\em Funkcija, kuri išmeta elementus tarp nurodytų elementų. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Mano\+Vector$<$ T $>$}
+Vektoriaus klasė pritaikyta šitai programai. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mano_vector_aa9b6f8b6ab9685e40b467345b1733615}\label{class_mano_vector_aa9b6f8b6ab9685e40b467345b1733615} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!ManoVector@{ManoVector}}
+\index{ManoVector@{ManoVector}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ManoVector()}{ManoVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\mbox{\hyperlink{class_mano_vector}{\+::\+Mano\+Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default\textquotesingle{}inis konstruktorius. 
+
+\Hypertarget{class_mano_vector_a913f0d2381b0359a3e5d10f3ce47ccc3}\label{class_mano_vector_a913f0d2381b0359a3e5d10f3ce47ccc3} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!ManoVector@{ManoVector}}
+\index{ManoVector@{ManoVector}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ManoVector()}{ManoVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\mbox{\hyperlink{class_mano_vector}{\+::\+Mano\+Vector}} (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ T $>$}]{il }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+initialiazer\+\_\+list konstrukroius 
+
+\Hypertarget{class_mano_vector_a14be0833028f0811d8ee44f10cf05743}\label{class_mano_vector_a14be0833028f0811d8ee44f10cf05743} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!ManoVector@{ManoVector}}
+\index{ManoVector@{ManoVector}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ManoVector()}{ManoVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\mbox{\hyperlink{class_mano_vector}{\+::\+Mano\+Vector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$ \&}]{Kitas\+\_\+\+Vektorius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kopijavimo konstruktorius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kitas\+\_\+\+Vektorius} & Vektorius, iš kurio kopijuojami duomenys. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_ac341f5e059f404f57599b9ac0cee297c}\label{class_mano_vector_ac341f5e059f404f57599b9ac0cee297c} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!ManoVector@{ManoVector}}
+\index{ManoVector@{ManoVector}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ManoVector()}{ManoVector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\mbox{\hyperlink{class_mano_vector}{\+::\+Mano\+Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$ \&\&}]{Kitas\+\_\+\+Vektorius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Move konstruktorius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kitas\+\_\+\+Vektorius} & Vektorius, iš kurio perkeliami duomenys. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a7f9572eccdf885fa8a05cd11a6eeba82}\label{class_mano_vector_a7f9572eccdf885fa8a05cd11a6eeba82} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!````~ManoVector@{\texorpdfstring{$\sim$}{\string~}ManoVector}}
+\index{````~ManoVector@{\texorpdfstring{$\sim$}{\string~}ManoVector}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ManoVector()}{\string~ManoVector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxylink{class_mano_vector}{Mano\+Vector} destrukroius. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mano_vector_abc41c5ae62fa8b0972d9796b83e0c916}\label{class_mano_vector_abc41c5ae62fa8b0972d9796b83e0c916} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!assign@{assign}}
+\index{assign@{assign}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::assign (\begin{DoxyParamCaption}\item[{unsigned int}]{n,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri priskiria nurodytą elementą nurodytam kiekiui. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Kiekis. \\
+\hline
+{\em value} & Elementas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a29a565e738f89190928fbf2764f003d4}\label{class_mano_vector_a29a565e738f89190928fbf2764f003d4} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!at@{at}}
+\index{at@{at}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina nurodytą elementą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeksas} & Elemento indeksas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Elementas. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jei indeksas už ribų. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_mano_vector_aa2d1b65f95616705d6e21d97b9e6cdf5}\label{class_mano_vector_aa2d1b65f95616705d6e21d97b9e6cdf5} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!at@{at}}
+\index{at@{at}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina nurodytą elementą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeksas} & Elemento indeksas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Elementas. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Jei indeksas už ribų. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_mano_vector_a61c1dc79fa73793db8665dc6954a46d6}\label{class_mano_vector_a61c1dc79fa73793db8665dc6954a46d6} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!back@{back}}
+\index{back@{back}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina paskutinį elementą. 
+
+\begin{DoxyReturn}{Returns}
+Paskutinis elementas. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_ab84286a5f57758c9f54e27250b8d1442}\label{class_mano_vector_ab84286a5f57758c9f54e27250b8d1442} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!back@{back}}
+\index{back@{back}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina paskutinį elementą. 
+
+\begin{DoxyReturn}{Returns}
+Paskutinis elementas. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a961f948fe7918eb23b9296d9c4e8bb16}\label{class_mano_vector_a961f948fe7918eb23b9296d9c4e8bb16} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Funkcija, kuri grąžina konstantinę rodyklę į pirmą vektoriaus elementą. 
+
+\begin{DoxyReturn}{Returns}
+Konstantinė rodyklė į pirmą vektoriaus elementą. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a4410ad8472cb4efa67f8b3e3aefc5f5c}\label{class_mano_vector_a4410ad8472cb4efa67f8b3e3aefc5f5c} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Funkcija, kuri grąžina rodyklę į pirmą vektoriaus elementą. 
+
+\begin{DoxyReturn}{Returns}
+Rodyklė į pirmą vektoriaus elementą. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_aee38208a5d387f29c881f4c583023803}\label{class_mano_vector_aee38208a5d387f29c881f4c583023803} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+unsigned int \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina vektoriaus talpą. 
+
+\begin{DoxyReturn}{Returns}
+Vektoriaus talpa. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a75f9c8ba96421cd4dbe739edc5a67d54}\label{class_mano_vector_a75f9c8ba96421cd4dbe739edc5a67d54} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, išvalanti visą vektorių 
+
+\Hypertarget{class_mano_vector_a68cf29767008e43684d51a2193d710cf}\label{class_mano_vector_a68cf29767008e43684d51a2193d710cf} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!data@{data}}
+\index{data@{data}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Funkcija, kuri grąžina rodyklę į duomenis. 
+
+\begin{DoxyReturn}{Returns}
+Rodyklė į duomenis. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a7491c687ef55f7cc4a782bc79bd10b01}\label{class_mano_vector_a7491c687ef55f7cc4a782bc79bd10b01} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!emplace@{emplace}}
+\index{emplace@{emplace}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::emplace (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas,  }\item[{T \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri prideda elementą į nurodytą poziciją. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Elementas, kuris turi būti pridėtas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a88beaf5d4397254299cf079f8039e41d}\label{class_mano_vector_a88beaf5d4397254299cf079f8039e41d} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!emplace\_back@{emplace\_back}}
+\index{emplace\_back@{emplace\_back}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{emplace\_back()}{emplace\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::emplace\+\_\+back (\begin{DoxyParamCaption}\item[{T \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri prideda elementą į vektoriaus pabaigą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Elementas, kuris turi būti pridėtas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_ab8671389513591cd5fb55481f3a4aaa6}\label{class_mano_vector_ab8671389513591cd5fb55481f3a4aaa6} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri patikrina ar vektorius tuščias. 
+
+\begin{DoxyReturn}{Returns}
+Ar vektorius tuščias. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_aeba1eb378d12d29b017f0afe3a0ed798}\label{class_mano_vector_aeba1eb378d12d29b017f0afe3a0ed798} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!end@{end}}
+\index{end@{end}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Funkcija, kuri grąžina konstantinę rodyklę į vektoriaus pabaigą. 
+
+\begin{DoxyReturn}{Returns}
+Konstantinė rodyklė į vektoriaus pabaigą. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a1ee52902a8b056f4712f2624de7fe32e}\label{class_mano_vector_a1ee52902a8b056f4712f2624de7fe32e} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!end@{end}}
+\index{end@{end}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Funkcija, kuri grąžina rodyklę į vektoriaus pabaigą. 
+
+\begin{DoxyReturn}{Returns}
+Rodyklė į vektoriaus pabaigą. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a5f355bf104c9c979df91bc5736141bc5}\label{class_mano_vector_a5f355bf104c9c979df91bc5736141bc5} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{T \texorpdfstring{$\ast$}{*}}]{pirmas\+\_\+elementas,  }\item[{T \texorpdfstring{$\ast$}{*}}]{paskutinis\+\_\+elementas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri išmeta elementus tarp nurodytų elementų. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pirmas\+\_\+elementas} & Pirmas elementas. \\
+\hline
+{\em paskutinis\+\_\+elementas} & Paskutinis elementas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rodyklė į paskutinį elementą. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a7a1582500030bc6533a84e1210c9195e}\label{class_mano_vector_a7a1582500030bc6533a84e1210c9195e} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri išmeta nurodytą elementą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeksas} & Elemento indeksas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_aaec80242b4db7fad0f4b0297033209aa}\label{class_mano_vector_aaec80242b4db7fad0f4b0297033209aa} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!front@{front}}
+\index{front@{front}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina pirmą elementą. 
+
+\begin{DoxyReturn}{Returns}
+Pirmas elementas. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_ac4f83bcde4bc108430529f37f92a1a9d}\label{class_mano_vector_ac4f83bcde4bc108430529f37f92a1a9d} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!front@{front}}
+\index{front@{front}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina pirmą elementą. 
+
+\begin{DoxyReturn}{Returns}
+Pirmas elementas. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_ade0c70eadc8c71e8fc20c217b74782e1}\label{class_mano_vector_ade0c70eadc8c71e8fc20c217b74782e1} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas,  }\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri prideda elementą į nurodytą poziciją. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Elementas, kuris turi būti pridėtas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a9a9bc74965a27d2effc8406c9d446a13}\label{class_mano_vector_a9a9bc74965a27d2effc8406c9d446a13} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina maksimalų galimą vektoriaus dydį. 
+
+\begin{DoxyReturn}{Returns}
+Maksimalus vektoriaus dydis. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_a3ab3e5131d802bc377d714afef0354d3}\label{class_mano_vector_a3ab3e5131d802bc377d714afef0354d3} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$ \&}]{Kitas\+\_\+\+Vektorius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kopijavimo operatorius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kitas\+\_\+\+Vektorius} & Vektorius, iš kurio kopijuojami duomenys. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_aa65a97a6164645fcf558fa71de76c2b1}\label{class_mano_vector_aa65a97a6164645fcf558fa71de76c2b1} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}} \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$ \&\&}]{Kitas\+\_\+\+Vektorius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move operatorius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kitas\+\_\+\+Vektorius} & Vektorius, iš kurio perkeliami duomenys. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a8bcab0ba0f0b955b97676e658e098a36}\label{class_mano_vector_a8bcab0ba0f0b955b97676e658e098a36} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operatorius, kuris grąžina nurodytą elementą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeksas} & Elemento indeksas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_ae7e06890d62bb4157e22829bdd7b42c1}\label{class_mano_vector_ae7e06890d62bb4157e22829bdd7b42c1} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{indeksas }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operatorius, kuris grąžina nurodytą elementą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeksas} & Elemento indeksas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a108bdc1c2733c7d8b658ad6ce405e30a}\label{class_mano_vector_a108bdc1c2733c7d8b658ad6ce405e30a} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri pašalina elementą iš \doxylink{class_mano_vector}{Mano\+Vector} pabaigos. 
+
+\Hypertarget{class_mano_vector_aaabe8090e07d75c6f1940d2eea9f1ea7}\label{class_mano_vector_aaabe8090e07d75c6f1940d2eea9f1ea7} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri prideda elementą į vektoriaus pabaigą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Elementas, kuris turi būti pridėtas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_a8e68eddd6f7d466c332e239c940aceef}\label{class_mano_vector_a8e68eddd6f7d466c332e239c940aceef} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!reserve@{reserve}}
+\index{reserve@{reserve}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::reserve (\begin{DoxyParamCaption}\item[{unsigned int}]{nauja\+\_\+talpa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri rezervuoja vietos vektoriuje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nauja\+\_\+talpa} & Nauja vektoriaus talpa. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::length\+\_\+error} & Jei vektorius neturi tiek vietos. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_mano_vector_aac00e134d7bd4d70397103c60b17b32f}\label{class_mano_vector_aac00e134d7bd4d70397103c60b17b32f} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{unsigned int}]{naujas\+\_\+dydis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri pakeičia \doxylink{class_mano_vector}{Mano\+Vector} dydį į nurodytą dydį. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em naujas\+\_\+dydis} & Naujas \doxylink{class_mano_vector}{Mano\+Vector} dydis. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mano_vector_ae538ecddbadcd94a5a0db692312b7690}\label{class_mano_vector_ae538ecddbadcd94a5a0db692312b7690} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!shrink\_to\_fit@{shrink\_to\_fit}}
+\index{shrink\_to\_fit@{shrink\_to\_fit}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{shrink\_to\_fit()}{shrink\_to\_fit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::shrink\+\_\+to\+\_\+fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri sumažina vektoriaus talpą iki vektoriaus dydžio. 
+
+\Hypertarget{class_mano_vector_a76c4fc5fe2698edd188c553870ee4a3c}\label{class_mano_vector_a76c4fc5fe2698edd188c553870ee4a3c} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!size@{size}}
+\index{size@{size}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+unsigned int \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri grąžina vektoriaus dydį. 
+
+\begin{DoxyReturn}{Returns}
+Vektoriaus dydis. 
+\end{DoxyReturn}
+\Hypertarget{class_mano_vector_af8ca0e59119387d1cde7bdfe3d3f4433}\label{class_mano_vector_af8ca0e59119387d1cde7bdfe3d3f4433} 
+\index{ManoVector$<$ T $>$@{ManoVector$<$ T $>$}!swap@{swap}}
+\index{swap@{swap}!ManoVector$<$ T $>$@{ManoVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$\+::swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ T $>$ \&}]{Kitas\+\_\+\+Vektorius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcija, kuri sukeičia du vektorius vietomis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kitas\+\_\+\+Vektorius} & Kitas vektorius. \\
+\hline
+\end{DoxyParams}

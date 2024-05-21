@@ -1,0 +1,319 @@
+\doxysection{Headers/funkcijos.h File Reference}
+\hypertarget{funkcijos_8h}{}\label{funkcijos_8h}\index{Headers/funkcijos.h@{Headers/funkcijos.h}}
+{\ttfamily \#include "{}Zmogus.\+h"{}}\newline
+{\ttfamily \#include "{}Vector.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_studentas}{Studentas}}
+\begin{DoxyCompactList}\small\item\em Studento klasė. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{funkcijos_8h_a3829ffcbdc96532bcd2696c01759271c}{palyginti\+Pagal\+Varda}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti du studentus pagal vardą. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcijos_8h_a2116d42634e6cb9f3e60a68cb39401f1}{palyginti\+Pagal\+Pavarde}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti su studentus pagal pavardę. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcijos_8h_aa38a94b1155c2f8ea6290bfe64561e34}{palyginti\+Pagal\+Vidurki}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti dviejų studentų balus pagal vidurkį. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcijos_8h_ab24f7a3333f500bc116ac08f01154735}{palyginti\+Pagal\+Mediana}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti dviejų studentų balus pagal medianą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8h_a422e5454da39bf97123e9e220595a11a}{Pasalinti\+Kietus\+Studentus}} (\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&\mbox{\hyperlink{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8}{Studentai}}, int \mbox{\hyperlink{funkcijos_8h_a076ad6c30f3965d96e686cb11d91b31e}{norimas\+\_\+rikiavimas}})
+\begin{DoxyCompactList}\small\item\em Panaikinti studentus, kuriu galutinis balas \texorpdfstring{$>$}{>}= 5.\+0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8h_aeed004639de141999c3fb136e282af83}{Generuoti\+Faila}} (int kiekis, int nd\+\_\+kiekis)
+\begin{DoxyCompactList}\small\item\em Generuoti studentų failą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8h_aea734753c680fd2357108d3cd3ec824f}{Generuoti\+Pazymius}} (\mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\begin{DoxyCompactList}\small\item\em Generuoti atsitiktinius pažymius studentui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8h_a927e9c8d810241687764d0fa9c5fd396}{Generuoti\+Studenta}} (\mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\begin{DoxyCompactList}\small\item\em Generuoti atsitiktinį studentą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8h_aca848033477b0cbc647781cc16a86290}{Isvesti\+Rezultatus}} (string pavadinimas, const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&\mbox{\hyperlink{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8}{Studentai}}, int \mbox{\hyperlink{funkcijos_8h_ac91f3bc51042a2b63312dbac98f066e7}{norima\+\_\+isvedimo\+\_\+vieta}})
+\begin{DoxyCompactList}\small\item\em Išvesti rezultatus i ekraną arba į failą. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{funkcijos_8h_ac91f3bc51042a2b63312dbac98f066e7}{norima\+\_\+isvedimo\+\_\+vieta}}
+\begin{DoxyCompactList}\small\item\em Kintamasis, saugantis vartotojo norimą rezultatų išvedimo vietą \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funkcijos_8h_a234f968cfd4042148118185d186a4801}{programos\+\_\+veikimas}}
+\begin{DoxyCompactList}\small\item\em Kintamasis, saugantis vartojo norimą programos veikimą \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funkcijos_8h_a076ad6c30f3965d96e686cb11d91b31e}{norimas\+\_\+rikiavimas}}
+\begin{DoxyCompactList}\small\item\em Kintamsis, saugantis vartotojo norimą rikiavimą \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{funkcijos_8h_a0e865d391a429dee30a321caaf3e7bfb}{programos\+\_\+tesinys}}
+\begin{DoxyCompactList}\small\item\em Kintamasis, kuris žino ar vartojas nori testi darbą su programa. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{funkcijos_8h_a40716f4d271a9037bd7cdaeff0c7a78c}{choice3}}
+\begin{DoxyCompactList}\small\item\em Kintamasis, kuris žino ar vartotojas nori kartoti tam tikrą programos dalį (Pvz.\+: įvesti namų darbo rezultatą) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ string $>$ \mbox{\hyperlink{funkcijos_8h_a72c702ffeada532a8e44441f54185a25}{Vardai}}
+\begin{DoxyCompactList}\small\item\em Vardų vektorius skirtas generuoti atsitiktinius vardus. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ string $>$ \mbox{\hyperlink{funkcijos_8h_a2c27e8d601a63f7c965caea7c54553ea}{Pavardes}}
+\begin{DoxyCompactList}\small\item\em Pavardžių vektorius skirtas generuoti atsitiktines pavardes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \mbox{\hyperlink{funkcijos_8h_a20980cadbbbf236b5c992e3fb3d6625e}{Lievi}}
+\begin{DoxyCompactList}\small\item\em Studentų vektorius, kurie gavo skolą \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \mbox{\hyperlink{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8}{Studentai}}
+\begin{DoxyCompactList}\small\item\em Studentų vektorius, kurie išlaikė dalyką \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{funkcijos_8h_aeed004639de141999c3fb136e282af83}\label{funkcijos_8h_aeed004639de141999c3fb136e282af83} 
+\index{funkcijos.h@{funkcijos.h}!GeneruotiFaila@{GeneruotiFaila}}
+\index{GeneruotiFaila@{GeneruotiFaila}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{GeneruotiFaila()}{GeneruotiFaila()}}
+{\footnotesize\ttfamily void Generuoti\+Faila (\begin{DoxyParamCaption}\item[{int}]{kiekis,  }\item[{int}]{nd\+\_\+kiekis }\end{DoxyParamCaption})}
+
+
+
+Generuoti studentų failą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kiekis} & Norimas studentų kiekis. \\
+\hline
+{\em nd\+\_\+kiekis} & Norimas namų darbų kiekis kiekvienam studentui. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8h_aea734753c680fd2357108d3cd3ec824f}\label{funkcijos_8h_aea734753c680fd2357108d3cd3ec824f} 
+\index{funkcijos.h@{funkcijos.h}!GeneruotiPazymius@{GeneruotiPazymius}}
+\index{GeneruotiPazymius@{GeneruotiPazymius}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{GeneruotiPazymius()}{GeneruotiPazymius()}}
+{\footnotesize\ttfamily void Generuoti\+Pazymius (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+
+Generuoti atsitiktinius pažymius studentui. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Laikinas\+Studentas} & Studento objektas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8h_a927e9c8d810241687764d0fa9c5fd396}\label{funkcijos_8h_a927e9c8d810241687764d0fa9c5fd396} 
+\index{funkcijos.h@{funkcijos.h}!GeneruotiStudenta@{GeneruotiStudenta}}
+\index{GeneruotiStudenta@{GeneruotiStudenta}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{GeneruotiStudenta()}{GeneruotiStudenta()}}
+{\footnotesize\ttfamily void Generuoti\+Studenta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+
+Generuoti atsitiktinį studentą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Laikinas\+Studentas} & Studento objektas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8h_aca848033477b0cbc647781cc16a86290}\label{funkcijos_8h_aca848033477b0cbc647781cc16a86290} 
+\index{funkcijos.h@{funkcijos.h}!IsvestiRezultatus@{IsvestiRezultatus}}
+\index{IsvestiRezultatus@{IsvestiRezultatus}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{IsvestiRezultatus()}{IsvestiRezultatus()}}
+{\footnotesize\ttfamily void Isvesti\+Rezultatus (\begin{DoxyParamCaption}\item[{string}]{pavadinimas,  }\item[{const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&}]{Studentai,  }\item[{int}]{norima\+\_\+isvedimo\+\_\+vieta }\end{DoxyParamCaption})}
+
+
+
+Išvesti rezultatus i ekraną arba į failą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pavadinimas} & Norimas failo pavadinimas. \\
+\hline
+{\em Studentai} & Studentų vektorius. \\
+\hline
+{\em norima\+\_\+isvedimo\+\_\+vieta} & Norima išvedimo vieta. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8h_ab24f7a3333f500bc116ac08f01154735}\label{funkcijos_8h_ab24f7a3333f500bc116ac08f01154735} 
+\index{funkcijos.h@{funkcijos.h}!palygintiPagalMediana@{palygintiPagalMediana}}
+\index{palygintiPagalMediana@{palygintiPagalMediana}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalMediana()}{palygintiPagalMediana()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Mediana (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti dviejų studentų balus pagal medianą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studento galutinis balas pagal medianą yra mažesnis nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8h_a2116d42634e6cb9f3e60a68cb39401f1}\label{funkcijos_8h_a2116d42634e6cb9f3e60a68cb39401f1} 
+\index{funkcijos.h@{funkcijos.h}!palygintiPagalPavarde@{palygintiPagalPavarde}}
+\index{palygintiPagalPavarde@{palygintiPagalPavarde}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalPavarde()}{palygintiPagalPavarde()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Pavarde (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti su studentus pagal pavardę. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studentu pavardė yra žemiau pagal abecėlę nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8h_a3829ffcbdc96532bcd2696c01759271c}\label{funkcijos_8h_a3829ffcbdc96532bcd2696c01759271c} 
+\index{funkcijos.h@{funkcijos.h}!palygintiPagalVarda@{palygintiPagalVarda}}
+\index{palygintiPagalVarda@{palygintiPagalVarda}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalVarda()}{palygintiPagalVarda()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Varda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti du studentus pagal vardą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studento vardas yra žemiau pagal abecėlę nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8h_aa38a94b1155c2f8ea6290bfe64561e34}\label{funkcijos_8h_aa38a94b1155c2f8ea6290bfe64561e34} 
+\index{funkcijos.h@{funkcijos.h}!palygintiPagalVidurki@{palygintiPagalVidurki}}
+\index{palygintiPagalVidurki@{palygintiPagalVidurki}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalVidurki()}{palygintiPagalVidurki()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Vidurki (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti dviejų studentų balus pagal vidurkį. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studento galutinis balas pagal vidurkį yra mažesnis nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8h_a422e5454da39bf97123e9e220595a11a}\label{funkcijos_8h_a422e5454da39bf97123e9e220595a11a} 
+\index{funkcijos.h@{funkcijos.h}!PasalintiKietusStudentus@{PasalintiKietusStudentus}}
+\index{PasalintiKietusStudentus@{PasalintiKietusStudentus}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{PasalintiKietusStudentus()}{PasalintiKietusStudentus()}}
+{\footnotesize\ttfamily void Pasalinti\+Kietus\+Studentus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&}]{Studentai,  }\item[{int}]{norimas\+\_\+rikiavimas }\end{DoxyParamCaption})}
+
+
+
+Panaikinti studentus, kuriu galutinis balas \texorpdfstring{$>$}{>}= 5.\+0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Studentai} & Studentų vektorius. \\
+\hline
+{\em norimas\+\_\+rikiavimas} & Norimas rikiavimas. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{funkcijos_8h_a40716f4d271a9037bd7cdaeff0c7a78c}\label{funkcijos_8h_a40716f4d271a9037bd7cdaeff0c7a78c} 
+\index{funkcijos.h@{funkcijos.h}!choice3@{choice3}}
+\index{choice3@{choice3}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{choice3}{choice3}}
+{\footnotesize\ttfamily char choice3\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Kintamasis, kuris žino ar vartotojas nori kartoti tam tikrą programos dalį (Pvz.\+: įvesti namų darbo rezultatą) 
+
+\Hypertarget{funkcijos_8h_a20980cadbbbf236b5c992e3fb3d6625e}\label{funkcijos_8h_a20980cadbbbf236b5c992e3fb3d6625e} 
+\index{funkcijos.h@{funkcijos.h}!Lievi@{Lievi}}
+\index{Lievi@{Lievi}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{Lievi}{Lievi}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$\mbox{\hyperlink{class_studentas}{Studentas}}$>$ Lievi\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Studentų vektorius, kurie gavo skolą 
+
+\Hypertarget{funkcijos_8h_ac91f3bc51042a2b63312dbac98f066e7}\label{funkcijos_8h_ac91f3bc51042a2b63312dbac98f066e7} 
+\index{funkcijos.h@{funkcijos.h}!norima\_isvedimo\_vieta@{norima\_isvedimo\_vieta}}
+\index{norima\_isvedimo\_vieta@{norima\_isvedimo\_vieta}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{norima\_isvedimo\_vieta}{norima\_isvedimo\_vieta}}
+{\footnotesize\ttfamily int norima\+\_\+isvedimo\+\_\+vieta\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Kintamasis, saugantis vartotojo norimą rezultatų išvedimo vietą 
+
+\Hypertarget{funkcijos_8h_a076ad6c30f3965d96e686cb11d91b31e}\label{funkcijos_8h_a076ad6c30f3965d96e686cb11d91b31e} 
+\index{funkcijos.h@{funkcijos.h}!norimas\_rikiavimas@{norimas\_rikiavimas}}
+\index{norimas\_rikiavimas@{norimas\_rikiavimas}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{norimas\_rikiavimas}{norimas\_rikiavimas}}
+{\footnotesize\ttfamily int norimas\+\_\+rikiavimas\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Kintamsis, saugantis vartotojo norimą rikiavimą 
+
+\Hypertarget{funkcijos_8h_a2c27e8d601a63f7c965caea7c54553ea}\label{funkcijos_8h_a2c27e8d601a63f7c965caea7c54553ea} 
+\index{funkcijos.h@{funkcijos.h}!Pavardes@{Pavardes}}
+\index{Pavardes@{Pavardes}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{Pavardes}{Pavardes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$string$>$ Pavardes\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Pavardžių vektorius skirtas generuoti atsitiktines pavardes. 
+
+\Hypertarget{funkcijos_8h_a0e865d391a429dee30a321caaf3e7bfb}\label{funkcijos_8h_a0e865d391a429dee30a321caaf3e7bfb} 
+\index{funkcijos.h@{funkcijos.h}!programos\_tesinys@{programos\_tesinys}}
+\index{programos\_tesinys@{programos\_tesinys}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{programos\_tesinys}{programos\_tesinys}}
+{\footnotesize\ttfamily char programos\+\_\+tesinys\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Kintamasis, kuris žino ar vartojas nori testi darbą su programa. 
+
+\Hypertarget{funkcijos_8h_a234f968cfd4042148118185d186a4801}\label{funkcijos_8h_a234f968cfd4042148118185d186a4801} 
+\index{funkcijos.h@{funkcijos.h}!programos\_veikimas@{programos\_veikimas}}
+\index{programos\_veikimas@{programos\_veikimas}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{programos\_veikimas}{programos\_veikimas}}
+{\footnotesize\ttfamily int programos\+\_\+veikimas\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Kintamasis, saugantis vartojo norimą programos veikimą 
+
+\Hypertarget{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8}\label{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8} 
+\index{funkcijos.h@{funkcijos.h}!Studentai@{Studentai}}
+\index{Studentai@{Studentai}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{Studentai}{Studentai}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$\mbox{\hyperlink{class_studentas}{Studentas}}$>$ Studentai\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Studentų vektorius, kurie išlaikė dalyką 
+
+\Hypertarget{funkcijos_8h_a72c702ffeada532a8e44441f54185a25}\label{funkcijos_8h_a72c702ffeada532a8e44441f54185a25} 
+\index{funkcijos.h@{funkcijos.h}!Vardai@{Vardai}}
+\index{Vardai@{Vardai}!funkcijos.h@{funkcijos.h}}
+\doxysubsubsection{\texorpdfstring{Vardai}{Vardai}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$string$>$ Vardai\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Vardų vektorius skirtas generuoti atsitiktinius vardus. 
+

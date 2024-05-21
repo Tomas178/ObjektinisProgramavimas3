@@ -1,0 +1,263 @@
+\doxysection{Sources/funkcijos.cpp File Reference}
+\hypertarget{funkcijos_8cpp}{}\label{funkcijos_8cpp}\index{Sources/funkcijos.cpp@{Sources/funkcijos.cpp}}
+{\ttfamily \#include "{}../\+Headers/\+Zmogus.\+h"{}}\newline
+{\ttfamily \#include "{}../\+Headers/funkcijos.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+istringstream \& \mbox{\hyperlink{funkcijos_8cpp_a054ae9171e03b6ca66f11dc53599a7e9}{operator$>$$>$}} (istringstream \&filename, \mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\item 
+istream \& \mbox{\hyperlink{funkcijos_8cpp_ae977acbb6b066652852fb75afea227fb}{operator$>$$>$}} (istream \&manual, \mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\item 
+ostream \& \mbox{\hyperlink{funkcijos_8cpp_ab7dd5c6a6ff15989e498e967642b7170}{operator$<$$<$}} (ostream \&console, const \mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\item 
+ofstream \& \mbox{\hyperlink{funkcijos_8cpp_aef779218886f95a845c342621d808874}{operator$<$$<$}} (ofstream \&filename, const \mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\item 
+bool \mbox{\hyperlink{funkcijos_8cpp_a3829ffcbdc96532bcd2696c01759271c}{palyginti\+Pagal\+Varda}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti du studentus pagal vardą. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcijos_8cpp_a2116d42634e6cb9f3e60a68cb39401f1}{palyginti\+Pagal\+Pavarde}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti su studentus pagal pavardę. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcijos_8cpp_aa38a94b1155c2f8ea6290bfe64561e34}{palyginti\+Pagal\+Vidurki}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti dviejų studentų balus pagal vidurkį. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcijos_8cpp_ab24f7a3333f500bc116ac08f01154735}{palyginti\+Pagal\+Mediana}} (const \mbox{\hyperlink{class_studentas}{Studentas}} \&a, const \mbox{\hyperlink{class_studentas}{Studentas}} \&b)
+\begin{DoxyCompactList}\small\item\em Palyginti dviejų studentų balus pagal medianą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8cpp_a422e5454da39bf97123e9e220595a11a}{Pasalinti\+Kietus\+Studentus}} (\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&\mbox{\hyperlink{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8}{Studentai}}, int \mbox{\hyperlink{funkcijos_8h_a076ad6c30f3965d96e686cb11d91b31e}{norimas\+\_\+rikiavimas}})
+\begin{DoxyCompactList}\small\item\em Panaikinti studentus, kuriu galutinis balas \texorpdfstring{$>$}{>}= 5.\+0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8cpp_aeed004639de141999c3fb136e282af83}{Generuoti\+Faila}} (int kiekis, int nd\+\_\+kiekis)
+\begin{DoxyCompactList}\small\item\em Generuoti studentų failą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8cpp_aca848033477b0cbc647781cc16a86290}{Isvesti\+Rezultatus}} (string pavadinimas, const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&\mbox{\hyperlink{funkcijos_8h_af1feffb21ed8e8a6b0862afe8d68b9d8}{Studentai}}, int \mbox{\hyperlink{funkcijos_8h_ac91f3bc51042a2b63312dbac98f066e7}{norima\+\_\+isvedimo\+\_\+vieta}})
+\begin{DoxyCompactList}\small\item\em Išvesti rezultatus i ekraną arba į failą. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8cpp_aea734753c680fd2357108d3cd3ec824f}{Generuoti\+Pazymius}} (\mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\begin{DoxyCompactList}\small\item\em Generuoti atsitiktinius pažymius studentui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcijos_8cpp_a927e9c8d810241687764d0fa9c5fd396}{Generuoti\+Studenta}} (\mbox{\hyperlink{class_studentas}{Studentas}} \&Laikinas\+Studentas)
+\begin{DoxyCompactList}\small\item\em Generuoti atsitiktinį studentą. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{funkcijos_8cpp_aeed004639de141999c3fb136e282af83}\label{funkcijos_8cpp_aeed004639de141999c3fb136e282af83} 
+\index{funkcijos.cpp@{funkcijos.cpp}!GeneruotiFaila@{GeneruotiFaila}}
+\index{GeneruotiFaila@{GeneruotiFaila}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{GeneruotiFaila()}{GeneruotiFaila()}}
+{\footnotesize\ttfamily void Generuoti\+Faila (\begin{DoxyParamCaption}\item[{int}]{kiekis,  }\item[{int}]{nd\+\_\+kiekis }\end{DoxyParamCaption})}
+
+
+
+Generuoti studentų failą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kiekis} & Norimas studentų kiekis. \\
+\hline
+{\em nd\+\_\+kiekis} & Norimas namų darbų kiekis kiekvienam studentui. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8cpp_aea734753c680fd2357108d3cd3ec824f}\label{funkcijos_8cpp_aea734753c680fd2357108d3cd3ec824f} 
+\index{funkcijos.cpp@{funkcijos.cpp}!GeneruotiPazymius@{GeneruotiPazymius}}
+\index{GeneruotiPazymius@{GeneruotiPazymius}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{GeneruotiPazymius()}{GeneruotiPazymius()}}
+{\footnotesize\ttfamily void Generuoti\+Pazymius (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+
+Generuoti atsitiktinius pažymius studentui. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Laikinas\+Studentas} & Studento objektas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8cpp_a927e9c8d810241687764d0fa9c5fd396}\label{funkcijos_8cpp_a927e9c8d810241687764d0fa9c5fd396} 
+\index{funkcijos.cpp@{funkcijos.cpp}!GeneruotiStudenta@{GeneruotiStudenta}}
+\index{GeneruotiStudenta@{GeneruotiStudenta}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{GeneruotiStudenta()}{GeneruotiStudenta()}}
+{\footnotesize\ttfamily void Generuoti\+Studenta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+
+Generuoti atsitiktinį studentą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Laikinas\+Studentas} & Studento objektas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8cpp_aca848033477b0cbc647781cc16a86290}\label{funkcijos_8cpp_aca848033477b0cbc647781cc16a86290} 
+\index{funkcijos.cpp@{funkcijos.cpp}!IsvestiRezultatus@{IsvestiRezultatus}}
+\index{IsvestiRezultatus@{IsvestiRezultatus}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{IsvestiRezultatus()}{IsvestiRezultatus()}}
+{\footnotesize\ttfamily void Isvesti\+Rezultatus (\begin{DoxyParamCaption}\item[{string}]{pavadinimas,  }\item[{const \mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&}]{Studentai,  }\item[{int}]{norima\+\_\+isvedimo\+\_\+vieta }\end{DoxyParamCaption})}
+
+
+
+Išvesti rezultatus i ekraną arba į failą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pavadinimas} & Norimas failo pavadinimas. \\
+\hline
+{\em Studentai} & Studentų vektorius. \\
+\hline
+{\em norima\+\_\+isvedimo\+\_\+vieta} & Norima išvedimo vieta. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcijos_8cpp_aef779218886f95a845c342621d808874}\label{funkcijos_8cpp_aef779218886f95a845c342621d808874} 
+\index{funkcijos.cpp@{funkcijos.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ofstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ofstream \&}]{filename,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Išvesties ofstream objektas. \\
+\hline
+{\em Laikinas\+Studentas} & Objektas, kurį reikia išvesti. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Išvesties ofstream objektą. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_ab7dd5c6a6ff15989e498e967642b7170}\label{funkcijos_8cpp_ab7dd5c6a6ff15989e498e967642b7170} 
+\index{funkcijos.cpp@{funkcijos.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{console,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em console} & Išvesties ostream objektas. \\
+\hline
+{\em Laikinas\+Studentas} & Objektas, kurį reikia išvesti. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Išvesties ostream objektą. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_ae977acbb6b066652852fb75afea227fb}\label{funkcijos_8cpp_ae977acbb6b066652852fb75afea227fb} 
+\index{funkcijos.cpp@{funkcijos.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{manual,  }\item[{\mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em manual} & Įvesties istream objektas. \\
+\hline
+{\em Laikinas\+Studentas} & Objektas į kurį reikia skaityti duomenis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Įvesties istream objektą. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_a054ae9171e03b6ca66f11dc53599a7e9}\label{funkcijos_8cpp_a054ae9171e03b6ca66f11dc53599a7e9} 
+\index{funkcijos.cpp@{funkcijos.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily istringstream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istringstream \&}]{filename,  }\item[{\mbox{\hyperlink{class_studentas}{Studentas}} \&}]{Laikinas\+Studentas }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Įvesties stringstream objektas. \\
+\hline
+{\em Laikinas\+Studentas} & Objektas į kurį reikia skaityti duomenis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Įvesties stringstream objektą. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_ab24f7a3333f500bc116ac08f01154735}\label{funkcijos_8cpp_ab24f7a3333f500bc116ac08f01154735} 
+\index{funkcijos.cpp@{funkcijos.cpp}!palygintiPagalMediana@{palygintiPagalMediana}}
+\index{palygintiPagalMediana@{palygintiPagalMediana}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalMediana()}{palygintiPagalMediana()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Mediana (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti dviejų studentų balus pagal medianą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studento galutinis balas pagal medianą yra mažesnis nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_a2116d42634e6cb9f3e60a68cb39401f1}\label{funkcijos_8cpp_a2116d42634e6cb9f3e60a68cb39401f1} 
+\index{funkcijos.cpp@{funkcijos.cpp}!palygintiPagalPavarde@{palygintiPagalPavarde}}
+\index{palygintiPagalPavarde@{palygintiPagalPavarde}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalPavarde()}{palygintiPagalPavarde()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Pavarde (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti su studentus pagal pavardę. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studentu pavardė yra žemiau pagal abecėlę nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_a3829ffcbdc96532bcd2696c01759271c}\label{funkcijos_8cpp_a3829ffcbdc96532bcd2696c01759271c} 
+\index{funkcijos.cpp@{funkcijos.cpp}!palygintiPagalVarda@{palygintiPagalVarda}}
+\index{palygintiPagalVarda@{palygintiPagalVarda}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalVarda()}{palygintiPagalVarda()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Varda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti du studentus pagal vardą. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studento vardas yra žemiau pagal abecėlę nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_aa38a94b1155c2f8ea6290bfe64561e34}\label{funkcijos_8cpp_aa38a94b1155c2f8ea6290bfe64561e34} 
+\index{funkcijos.cpp@{funkcijos.cpp}!palygintiPagalVidurki@{palygintiPagalVidurki}}
+\index{palygintiPagalVidurki@{palygintiPagalVidurki}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{palygintiPagalVidurki()}{palygintiPagalVidurki()}}
+{\footnotesize\ttfamily bool palyginti\+Pagal\+Vidurki (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_studentas}{Studentas}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Palyginti dviejų studentų balus pagal vidurkį. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Pirmasis studentas. \\
+\hline
+{\em b} & Antrasis studentas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, jei a studento galutinis balas pagal vidurkį yra mažesnis nei b studento, false atvirkščiai. 
+\end{DoxyReturn}
+\Hypertarget{funkcijos_8cpp_a422e5454da39bf97123e9e220595a11a}\label{funkcijos_8cpp_a422e5454da39bf97123e9e220595a11a} 
+\index{funkcijos.cpp@{funkcijos.cpp}!PasalintiKietusStudentus@{PasalintiKietusStudentus}}
+\index{PasalintiKietusStudentus@{PasalintiKietusStudentus}!funkcijos.cpp@{funkcijos.cpp}}
+\doxysubsubsection{\texorpdfstring{PasalintiKietusStudentus()}{PasalintiKietusStudentus()}}
+{\footnotesize\ttfamily void Pasalinti\+Kietus\+Studentus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mano_vector}{Mano\+Vector}}$<$ \mbox{\hyperlink{class_studentas}{Studentas}} $>$ \&}]{Studentai,  }\item[{int}]{norimas\+\_\+rikiavimas }\end{DoxyParamCaption})}
+
+
+
+Panaikinti studentus, kuriu galutinis balas \texorpdfstring{$>$}{>}= 5.\+0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Studentai} & Studentų vektorius. \\
+\hline
+{\em norimas\+\_\+rikiavimas} & Norimas rikiavimas. \\
+\hline
+\end{DoxyParams}
