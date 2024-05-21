@@ -4,20 +4,36 @@
 #include <iostream>
 #include <stdexcept>
 #include <limits>
-#include <algorithm> // for std::swap
+#include <algorithm>
+#include <initializer_list>
+#include <string>
 
 template <typename T>
-class Vector {
+class ManoVector {
     private:
-        unsigned int dydis;
-        unsigned int talpa;
+        size_t dydis;
+        size_t talpa;
         T* duomenys;
     public:
         //Member funkcijos
         int max_size() const { return std::numeric_limits<unsigned int>::max() / sizeof(T); }
-        Vector() : dydis(0), talpa(1), duomenys(new T[talpa]) {}
-        ~Vector() { delete[] duomenys; }
-        Vector& operator=(const Vector& Kitas_Vektorius) {
+        ManoVector() : dydis(0), talpa(0), duomenys(new T[talpa]) {}
+        ManoVector(std::initializer_list<T> il) : dydis(il.size()), talpa(il.size()), duomenys(new T[talpa]) {
+            std::copy(il.begin(), il.end(), duomenys);
+        }
+        ManoVector(const ManoVector<T>& Kitas_Vektorius) : dydis(Kitas_Vektorius.dydis), talpa(Kitas_Vektorius.talpa), duomenys(new T[talpa]) {
+            for (unsigned int i = 0; i < dydis; i++) {
+                duomenys[i] = Kitas_Vektorius.duomenys[i];
+            }
+        }
+        ManoVector(ManoVector&& Kitas_Vektorius) noexcept : dydis(Kitas_Vektorius.dydis), talpa(Kitas_Vektorius.talpa), duomenys(Kitas_Vektorius.duomenys) {
+            Kitas_Vektorius.dydis = 0;
+            Kitas_Vektorius.talpa = 0;
+            Kitas_Vektorius.duomenys = nullptr;
+        }   
+
+        ~ManoVector() { delete[] duomenys; }
+        ManoVector& operator=(const ManoVector& Kitas_Vektorius) {
             if (this == &Kitas_Vektorius) return *this;
             delete[] duomenys;
             dydis = Kitas_Vektorius.dydis;
@@ -28,7 +44,18 @@ class Vector {
             }
             return *this;
         }
-        
+        ManoVector& operator=(ManoVector&& Kitas_Vektorius) {
+            if (this == &Kitas_Vektorius) return *this;
+            delete[] duomenys;
+            dydis = Kitas_Vektorius.dydis;
+            talpa = Kitas_Vektorius.talpa;
+            duomenys = Kitas_Vektorius.duomenys;
+            Kitas_Vektorius.dydis = 0;
+            Kitas_Vektorius.talpa = 0;
+            Kitas_Vektorius.duomenys = nullptr;
+            return *this;
+        }
+
         //Element access funkcijos
         T& operator[](unsigned int indeksas) {return duomenys[indeksas];}
         const T& operator[](unsigned int indeksas) const {return duomenys[indeksas];}
@@ -62,7 +89,7 @@ class Vector {
         bool empty() const {return dydis == 0;}
         void reserve(unsigned int nauja_talpa) {
             if (nauja_talpa <= talpa) return;
-            if(nauja_talpa > max_size()) throw std::length_error("Vector::reserve");
+            if(nauja_talpa > max_size()) throw std::length_error("Vektorius tiek vietos neturi:(");
             T* nauji_duomenys = new T[nauja_talpa];
             for (unsigned int i = 0; i < dydis; i++) {
                 nauji_duomenys[i] = duomenys[i];
@@ -92,7 +119,7 @@ class Vector {
         //Modifiers funkcijos
         void clear() {dydis = 0;}
         void push_back(const T& value) {
-            if (dydis == talpa) reserve(talpa == 0 ? 1 : talpa * 2);
+            if (dydis >= talpa) reserve(talpa == 0 ? 1 : dydis * 2);
             duomenys[dydis++] = value;
         }
         void insert(unsigned int indeksas, const T& value) {
@@ -122,7 +149,7 @@ class Vector {
             dydis++;
         }
         void emplace_back(T&& value) {
-            if (dydis == talpa) reserve(talpa * 2);
+            if (dydis >= talpa) reserve(talpa == 0 ? 1 : dydis * 2);
             duomenys[dydis++] = std::move(value);
         }
         void pop_back() {
@@ -137,10 +164,23 @@ class Vector {
             }
             dydis = naujas_dydis;
         }
-        void swap(Vector& other) {
+        void swap(ManoVector& other) {
             std::swap(dydis, other.dydis);
             std::swap(talpa, other.talpa);
             std::swap(duomenys, other.duomenys);
+        }
+        void erase(T* pos) {
+            for (T* i = pos; i < duomenys + dydis - 1; i++) {
+                *i = *(i + 1);
+            }
+            dydis--;
+        }
+        void erase(T* start, T* end) {
+            unsigned int i = 0;
+            for (T* j = start; j < end; j++) {
+                duomenys[i++] = *j;
+            }
+            dydis -= end - start;
         }
 };
 

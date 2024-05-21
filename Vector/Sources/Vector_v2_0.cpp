@@ -1,5 +1,6 @@
 #include "../Headers/Zmogus.h"
 #include "../Headers/funkcijos.h"
+#include <vector>
 
 const int N = 10;
 int programos_veikimas;
@@ -9,24 +10,24 @@ int main() {
         int norima_isvedimo_vieta;
         int norimas_rikiavimas;
         int norima_strategija;
-        vector<Studentas> Studentai;
-        vector<Studentas> Kieti;
+        ManoVector<Studentas> Studentai;
+        ManoVector<Studentas> Kieti;
         srand(time(nullptr));
 
         do {
             try {
                 while (true) {
-                    cout << "Pasirinkite programos eiga:\n1 - Vedimas ranka.\n2 - Generuoti pazymius.\n3 - Generuoti ir studentu pazymius, ir vardus bei pavardes.\n4 - Baigti darba.\n5 - imti duomenis is failo.\n6 - Generuoti faila.\nPasirinkite: ";
+                    cout << "Pasirinkite programos eiga:\n1 - Vedimas ranka.\n2 - Generuoti pazymius.\n3 - Generuoti ir studentu pazymius, ir vardus bei pavardes.\n4 - Baigti darba.\n5 - imti duomenis is failo.\n6 - Generuoti faila.\n7 - Atlikti testa su vektoriais.\nPasirinkite: ";
                     cin >> programos_veikimas;
                     if (cin.fail()) {
                         cin.clear();
                         cin.ignore(numeric_limits<streamsize>::max(), '\n');
                         throw runtime_error("Iveskite skaiciu!");
                     }
-                    if (programos_veikimas > 0 && programos_veikimas < 7)
+                    if (programos_veikimas > 0 && programos_veikimas < 8)
                         break;
                     else
-                        throw runtime_error("Iveskite skaiciu intervale [1, 6]");
+                        throw runtime_error("Iveskite skaiciu intervale [1, 7]");
                 }
             } catch (const invalid_argument& e) {
                 cerr << "Klaida: " << e.what() << endl;
@@ -114,7 +115,50 @@ int main() {
                 GeneruotiFaila(kiekis, nd_kiekis);
             }
 
-            if(Studentokai.Nd_dydis() > 0 && programos_veikimas != 5 && programos_veikimas != 6){
+            if(programos_veikimas = 7) {
+                std::cout << std::fixed << std::setprecision(6);
+                std::cout << "\nElementu skaicius | std::vector laikas s      | ManoVector laikas s      | std::vector reallocs | Vector reallocs\n";
+                std::cout << "----------------------------------------------------------------------------------------------------------------------\n";
+
+                for (unsigned int sz : {10000, 100000, 1000000, 10000000, 100000000})
+                {
+                    // Measurement with std::vector
+                    auto start_v1 = std::chrono::high_resolution_clock::now();
+                    std::vector<int> v1;
+                    int reallocations_std_vector = 0;
+                    for (unsigned int i = 1; i <= sz; ++i)
+                    {
+                        v1.push_back(i);
+                        if (v1.capacity() == v1.size())
+                        {
+                            ++reallocations_std_vector;
+                        }
+                    }
+                    auto finish_v1 = std::chrono::high_resolution_clock::now();
+                    std::chrono::duration<double> elapsed_v1 = finish_v1 - start_v1;
+
+                    // Measurement with your Vector class
+                    auto start_v2 = std::chrono::high_resolution_clock::now();
+                    ManoVector<int> v2;
+                    int reallocations_custom_vector = 0;
+                    for (unsigned int i = 1; i <= sz; ++i)
+                    {
+                        v2.push_back(i);
+                        if (v2.capacity() == v2.size())
+                        {
+                            ++reallocations_custom_vector;
+                        }
+                    }
+                    auto finish_v2 = std::chrono::high_resolution_clock::now();
+                    std::chrono::duration<double> elapsed_v2 = finish_v2 - start_v2;
+
+                    // Print results in a table with proper formatting
+                    std::cout << std::setw(15) << sz << " | " << std::setw(27) << elapsed_v1.count() << " | " << std::setw(20) << elapsed_v2.count() << " | " << std::setw(20) << reallocations_std_vector << " | " << std::setw(15) << reallocations_custom_vector << "\n";
+                }
+                std::cout << "\n";
+            }
+
+            if(Studentokai.Nd_dydis() > 0 && programos_veikimas != 5 && programos_veikimas != 6 && programos_veikimas != 7){
                 Studentokai.nd_rusiavimas();
                 Studentokai.SetMediana(Studentokai.medianosSkaiciavimas(Studentokai.Get_Nd(), Studentokai.Nd_dydis(), Studentokai.Get_Egzaminas()));
                 Studentokai.setVidurkis(Studentokai.Vidurkis(Studentokai.Nd_dydis(), Studentokai.Nd_Suma(), Studentokai.Get_Egzaminas()));

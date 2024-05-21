@@ -20,14 +20,14 @@ using namespace std;
  */
 class Studentas : public Zmogus {
     private:
-        vector<int> namu_darbai;
+        ManoVector<int> namu_darbai;
         int egzaminas;
         double mediana;
         double vidurkis;
     public:
         Studentas();
         Studentas(const string &vard, const string &pavard);
-        vector<int> Get_Nd() const { return namu_darbai; }
+        ManoVector<int> Get_Nd() const { return namu_darbai; }
         int Get_Egzaminas() const { return egzaminas; }
         double Get_Mediana() const { return mediana; }
         double Get_Vidurkis() const { return vidurkis; }
@@ -46,7 +46,7 @@ class Studentas : public Zmogus {
         void ClearEverything() { this->vardas.clear(); this->pavarde.clear(); this->namu_darbai.clear(); this->egzaminas = 0; this->mediana = 0.0; this->vidurkis = 0.0; }
         void ND_clear() { this->namu_darbai.clear(); } 
         double Vidurkis(int nd_kiekis, int nd_suma, int egzaminas);
-        double medianosSkaiciavimas(const vector<int> &namu_darbai, int nd_kiekis, int egzaminas);
+        double medianosSkaiciavimas(const ManoVector<int> &namu_darbai, int nd_kiekis, int egzaminas);
         void Print() const override {};
         Studentas(const Studentas &LaikinasStudentas);
         Studentas(Studentas &&LaikinasStudentas) noexcept;
@@ -64,19 +64,19 @@ extern int norimas_rikiavimas;
 extern char programos_tesinys; 
 extern char choice3; 
 
-extern vector<string> Vardai;
-extern vector<string> Pavardes;
-extern vector<Studentas> Lievi; 
-extern vector<Studentas> Studentai; 
+extern ManoVector<string> Vardai;
+extern ManoVector<string> Pavardes;
+extern ManoVector<Studentas> Lievi; 
+extern ManoVector<Studentas> Studentai; 
 
 bool palygintiPagalVarda(const Studentas &a, const Studentas &b);
 bool palygintiPagalPavarde(const Studentas &a, const Studentas &b);
 bool palygintiPagalVidurki(const Studentas &a, const Studentas &b);
 bool palygintiPagalMediana(const Studentas &a, const Studentas &b);
-void PasalintiKietusStudentus(vector<Studentas> &Studentai, int norimas_rikiavimas);
+void PasalintiKietusStudentus(ManoVector<Studentas> &Studentai, int norimas_rikiavimas);
 void GeneruotiFaila(int kiekis, int nd_kiekis);
 void GeneruotiPazymius(Studentas &LaikinasStudentas);
 void GeneruotiStudenta(Studentas &LaikinasStudentas);
-void IsvestiRezultatus(string pavadinimas, const vector<Studentas> &Studentai, int norima_isvedimo_vieta);
+void IsvestiRezultatus(string pavadinimas, const ManoVector<Studentas> &Studentai, int norima_isvedimo_vieta);
 
 #endif

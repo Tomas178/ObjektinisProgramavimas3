@@ -189,7 +189,7 @@ double Studentas::Vidurkis(int nd_kiekis, int nd_suma, int egzaminas){
         return 0.6*egzaminas;
 }
 
-double Studentas::medianosSkaiciavimas(const vector<int> &namu_darbai, int nd_kiekis, int egzaminas){
+double Studentas::medianosSkaiciavimas(const ManoVector<int> &namu_darbai, int nd_kiekis, int egzaminas){
     if(nd_kiekis % 2 == 0 && nd_kiekis > 0)
         return (namu_darbai[nd_kiekis/2-1] + namu_darbai[nd_kiekis/2])/2.0*0.4 + 0.6*egzaminas;
     else if(nd_kiekis % 2 != 0 && nd_kiekis > 0)
@@ -214,7 +214,7 @@ bool palygintiPagalMediana(const Studentas &a, const Studentas &b) {
     return a.Get_Mediana() < b.Get_Mediana();
 }
 
-void PasalintiKietusStudentus(vector<Studentas> &Studentai, int norimas_rikiavimas){
+void PasalintiKietusStudentus(ManoVector<Studentas> &Studentai, int norimas_rikiavimas){
     try{
     if (norimas_rikiavimas == 3) {
         auto it = find_if(Studentai.begin(), Studentai.end(),
@@ -282,7 +282,7 @@ void GeneruotiFaila(int kiekis, int nd_kiekis){
     }  
 }
 
-void IsvestiRezultatus(string pavadinimas, const vector<Studentas> &Studentai, int norima_isvedimo_vieta) {
+void IsvestiRezultatus(string pavadinimas, const ManoVector<Studentas> &Studentai, int norima_isvedimo_vieta) {
     if (Studentai.size() > 0) {
         if (norima_isvedimo_vieta == 1) {
             cout << left << setw(20) << "Vardas" << setw(20) << "Pavarde" << setw(20) << "Galutinis (Vid.)" << setw(20)
@@ -317,8 +317,8 @@ void GeneruotiPazymius(Studentas &LaikinasStudentas){
 }
 
 void GeneruotiStudenta(Studentas &LaikinasStudentas){
-    vector<string> Vardai = {"Tomas", "Matas", "Kasparas", "Algirdas", "Mantas", "Adomas", "Simona", "Gerda", "Jurgita", "Ruta", "Lukas", "Edvardas", "Ernestas", "Rimas"};
-    vector<string> Pavardes = {"Petronis", "Semenas", "Ceseviciute", "Poskus", "Sumskis", "Leonardas", "Petronyte", "Serelis", "Kubilius", "Katleris", "Stonkus", "Sabonis"};
+    ManoVector<string> Vardai = {"Tomas", "Matas", "Kasparas", "Algirdas", "Mantas", "Adomas", "Simona", "Gerda", "Jurgita", "Ruta", "Lukas", "Edvardas", "Ernestas", "Rimas"};
+    ManoVector<string> Pavardes = {"Petronis", "Semenas", "Ceseviciute", "Poskus", "Sumskis", "Leonardas", "Petronyte", "Serelis", "Kubilius", "Katleris", "Stonkus", "Sabonis"};
     LaikinasStudentas.SetVardas(Vardai[rand() % Vardai.size()]);
     LaikinasStudentas.SetPavarde(Pavardes[rand() % Pavardes.size()]);
     GeneruotiPazymius(LaikinasStudentas);
