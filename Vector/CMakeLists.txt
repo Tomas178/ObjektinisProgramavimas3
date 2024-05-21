@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(V2_0_Vector)
+project(V3_0_Vector)
 
 # Pasikeisti pagal savo direktoriją iki failų
 set(GTEST_LIBRARY "C:/msys64/mingw64/lib/libgtest.a")
@@ -10,7 +10,7 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIR})
 include_directories(Headers)
 
-file(GLOB SOURCES "Sources/Vector_v2_0.cpp")
+file(GLOB SOURCES "Sources/Vector_v3_0.cpp")
 file(GLOB FUNKCIJOS "Sources/funkcijos.cpp")
 file(GLOB PROGRAMOS_TESTAVIMAS "Testavimas/Testavimas.cpp")
 file(GLOB VEKTORIAUS_TESTAVIMAS "Testavimas/Vektoriaus_Testavimas.cpp")

@@ -115,47 +115,46 @@ int main() {
                 GeneruotiFaila(kiekis, nd_kiekis);
             }
 
-            if(programos_veikimas = 7) {
-                std::cout << std::fixed << std::setprecision(6);
-                std::cout << "\nElementu skaicius | std::vector laikas s      | ManoVector laikas s      | std::vector reallocs | Vector reallocs\n";
-                std::cout << "----------------------------------------------------------------------------------------------------------------------\n";
+            if(programos_veikimas == 7) {
+                cout << fixed << setprecision(6);
+                cout << "\nElementu skaicius | std::vector laikas s      | ManoVector laikas s      | std::vector Atminties Perskirstymai | ManoVector Atminties Perskirstymai\n";
+                cout << "----------------------------------------------------------------------------------------------------------------------\n";
 
                 for (unsigned int sz : {10000, 100000, 1000000, 10000000, 100000000})
                 {
-                    // Measurement with std::vector
+                    // Testavimas su std::vector
                     auto start_v1 = std::chrono::high_resolution_clock::now();
                     std::vector<int> v1;
-                    int reallocations_std_vector = 0;
+                    int perskirstymai_std_vector = 0;
                     for (unsigned int i = 1; i <= sz; ++i)
                     {
                         v1.push_back(i);
                         if (v1.capacity() == v1.size())
                         {
-                            ++reallocations_std_vector;
+                            ++perskirstymai_std_vector;
                         }
                     }
                     auto finish_v1 = std::chrono::high_resolution_clock::now();
                     std::chrono::duration<double> elapsed_v1 = finish_v1 - start_v1;
 
-                    // Measurement with your Vector class
+                    // Testavimas su nuosavu vektoriumi
                     auto start_v2 = std::chrono::high_resolution_clock::now();
                     ManoVector<int> v2;
-                    int reallocations_custom_vector = 0;
+                    int perskirstymai_custom_vector = 0;
                     for (unsigned int i = 1; i <= sz; ++i)
                     {
                         v2.push_back(i);
                         if (v2.capacity() == v2.size())
                         {
-                            ++reallocations_custom_vector;
+                            ++perskirstymai_custom_vector;
                         }
                     }
                     auto finish_v2 = std::chrono::high_resolution_clock::now();
                     std::chrono::duration<double> elapsed_v2 = finish_v2 - start_v2;
 
-                    // Print results in a table with proper formatting
-                    std::cout << std::setw(15) << sz << " | " << std::setw(27) << elapsed_v1.count() << " | " << std::setw(20) << elapsed_v2.count() << " | " << std::setw(20) << reallocations_std_vector << " | " << std::setw(15) << reallocations_custom_vector << "\n";
+                    cout << setw(15) << sz << " | " << setw(27) << elapsed_v1.count() << " | " << setw(20) << elapsed_v2.count() << " | " << setw(20) << perskirstymai_std_vector << " | " << setw(15) << perskirstymai_custom_vector << "\n";
                 }
-                std::cout << "\n";
+                cout << "\n";
             }
 
             if(Studentokai.Nd_dydis() > 0 && programos_veikimas != 5 && programos_veikimas != 6 && programos_veikimas != 7){
