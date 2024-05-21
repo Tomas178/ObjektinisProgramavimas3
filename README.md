@@ -7,6 +7,16 @@
 - RAM(16,0 GB)
 - HDD(TOSHIBA MQ01ABD100 512GB)
 
+## Rezultatai
+
+| Elementų skaičius | `std::vector` laikas (s) | `ManoVector` laikas (s) | `std::vector` Atminties Perskirstymai | `ManoVector` Atminties Perskirstymai |
+|-------------------|--------------------------|--------------------------|---------------------------------------|---------------------------------------|
+|             10,000 |                  0.000185 |                0.000159 |                                    14 |                                   14 |
+|            100,000 |                  0.000888 |                0.000799 |                                    17 |                                   17 |
+|          1,000,000 |                  0.005041 |                0.004240 |                                    20 |                                   20 |
+|         10,000,000 |                  0.054503 |                0.053863 |                                    24 |                                   24 |
+|        100,000,000 |                  0.486738 |                0.488783 |                                    27 |                                   27 |
+
 # Instaliavimo instrukcija
 - Jeigu neturite CMake, tuomet reikia atsisiųsti iš https://cmake.org/download/ ir instaliuojant programą pasirinkti, kad nustatytų sistemos kintamuosius arba galite žiūrėti šitą video: https://www.youtube.com/watch?v=8_X5Iq9niDE.
 - Taip pat reikės atsisiųsti googletest darant šiuos žingsnius folderyje: 
