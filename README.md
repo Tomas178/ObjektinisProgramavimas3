@@ -80,6 +80,8 @@ int main() {
 
 Rezultatas, kurio tikimasi: ```ManoVector dabartinė talpa po rezervavimo: 200```
 
+
+### 5 Pavyzdys
 ```cpp
 #include <iostream>
 #include "ManoVector.h"
