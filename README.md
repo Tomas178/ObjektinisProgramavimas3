@@ -25,7 +25,10 @@ int main() {
     // Naudojama nuosavo vektoriaus capacity() funkcija
     std::cout << "ManoVector dabartinė talpa: " << mv.capacity() << std::endl;
     return 0;
-} ```
+}
+```
+Rezultatas, kurio tikimasi:/n
+```ManoVector dabartinė talpa: 128```
 
 ### 2 Pavyzdys 
 ```cpp
@@ -41,7 +44,10 @@ int main() {
     // Naudojama nuosavo vektoriaus size() funkcija
     std::cout << "ManoVector dabartinis dydis: " << mv.size() << std::endl;
     return 0;
-} ```
+}
+```
+Rezultatas, kurio tikimasi:/n
+```ManoVector dabartinis dydis: 128```
 
 
 
