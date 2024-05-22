@@ -27,7 +27,8 @@ int main() {
     std::cout << "Current capacity of ManoVector: " << mv.capacity() << std::endl;
 
     return 0;
-} ```cpp
+}
+```
 
 
 
