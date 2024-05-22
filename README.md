@@ -7,6 +7,31 @@
 - RAM(16,0 GB)
 - HDD(TOSHIBA MQ01ABD100 512GB)
 
+# Mano nuosavas vektorius
+
+## Funkcijų pavyzdžiai
+
+### 1 Pavyzdys
+```cpp
+#include <iostream>
+#include "ManoVector.h" // Include your custom vector header file
+
+int main() {
+    ManoVector<int> mv;
+    // Add elements to your custom vector (example)
+    for (int i = 0; i < 100; ++i) {
+        mv.push_back(i);
+    }
+
+    // Use the capacity function
+    unsigned int current_capacity = mv.capacity();
+    std::cout << "Current capacity of ManoVector: " << current_capacity << std::endl;
+
+    return 0;
+}
+
+
+
 ## Rezultatai
 
 | Elementų skaičius | `std::vector` laikas (s) | `ManoVector` laikas (s) | `std::vector` Atminties Perskirstymai | `ManoVector` Atminties Perskirstymai |
@@ -27,4 +52,5 @@
     - cmake ..             # Generate native build scripts for GoogleTest.
 - Tuomet build folder'yje turėtu atsirasti libgtest.a ir libgtest_main.a failai ir tada žiūrėkite į CMakeLists.txt ir nustatykite kelią iki tų failų pagal savo failų lokaciją.
 - Tuomet tam folderyje, raskite run.bat script'ą ir jums viska sutvarkys automatiškai.
-- V3_0_Vector.exe failą rasite Debug folder'yje, o Testas.exe rasite Testavimo_rezultatai folder'yje, kurie atsiras po CMake įvykdymo.
+- V3_0_Vector.exe failą rasite Debug folder'yje, o programos_testas.exe ir vektoriaus_testas.exe rasite Testavimo_rezultatai folder'yje, kurie atsiras po CMake įvykdymo.
+
