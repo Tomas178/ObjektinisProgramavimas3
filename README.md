@@ -14,21 +14,20 @@
 ### 1 Pavyzdys
 ```cpp
 #include <iostream>
-#include "ManoVector.h" // Include your custom vector header file
+#include "ManoVector.h"
 
 int main() {
     ManoVector<int> mv;
-    // Add elements to your custom vector (example)
+    // Pridedame elementus į nuosavą vektorių
     for (int i = 0; i < 100; ++i) {
         mv.push_back(i);
     }
 
-    // Use the capacity function
-    unsigned int current_capacity = mv.capacity();
-    std::cout << "Current capacity of ManoVector: " << current_capacity << std::endl;
+    // Naudojama nuosavo vektoriaus capacity() funkcija
+    std::cout << "Current capacity of ManoVector: " << mv.capacity() << std::endl;
 
     return 0;
-}
+} ```cpp
 
 
 
