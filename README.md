@@ -103,7 +103,12 @@ int main() {
 
 Rezultatas, kurio tikimasi: ```ManoVector dabartinė talpa po sumažinimo: 100```
 
-
+## Setup.exe naudojimosi instrukcija
+    - 2 kartus paspausti ant Setup.exe failo.
+    - Pirmame lange reikia pasirinkti lokaciją į kurią bus instaliuota programa ir tada spauskite 'next'
+    - Antrame lange leidžiama pasirinkti, jog programa būtų instaliuota ir ant darbalaukio.
+    - Trečiame lange leidžiai pasirinkti ar norite programą paleisti iš karto.
+    - Visus šiuos žingsnius atlikus teisingai turėtumete rasti programą savo nurodytoje lokacijoje 1 lange arba darbalaukyje, jeigu pažymėjot varnelę.
 
 ## Rezultatai
 
