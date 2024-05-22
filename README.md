@@ -27,8 +27,7 @@ int main() {
     return 0;
 }
 ```
-Rezultatas, kurio tikimasi:/n
-```ManoVector dabartinė talpa: 128```
+Rezultatas, kurio tikimasi:  ```ManoVector dabartinė talpa: 128```
 
 ### 2 Pavyzdys 
 ```cpp
@@ -46,8 +45,23 @@ int main() {
     return 0;
 }
 ```
-Rezultatas, kurio tikimasi:/n
-```ManoVector dabartinis dydis: 128```
+Rezultatas, kurio tikimasi:  ```ManoVector dabartinis dydis: 128```
+
+### 3 Pavyzdys
+```cpp
+#include <iostream>
+#include "ManoVector.h"
+
+int main() {
+    ManoVector<int> mv;
+    
+    // Naudojama nuosavo vektoriaus empty() funkcija
+    std::cout << "Ar ManoVector tuščias? " << (mv.empty() ? "Yes" : "No") << std::endl;
+
+    return 0;
+}
+```
+Rezultatas, kurio tikimasi:  ```Ar ManoVector tuščias? Taip```
 
 
 
