@@ -63,6 +63,44 @@ int main() {
 ```
 Rezultatas, kurio tikimasi:  ```Ar ManoVector tuščias? Taip```
 
+### 4 Pavyzdys
+```cpp
+#include <iostream>
+#include "ManoVector.h"
+
+int main() {
+    ManoVector<int> mv;
+    // Rezervuojama nauja talpa
+    mv.reserve(200);
+    // Naudojama nuosavo vektoriaus capacity() funkcija
+    std::cout << "ManoVector dabartinė talpa po rezervavimo: " << mv.capacity() << std::endl;
+    return 0;
+}
+```
+
+Rezultatas, kurio tikimasi: ```ManoVector dabartinė talpa po rezervavimo: 200```
+
+```cpp
+#include <iostream>
+#include "ManoVector.h"
+
+int main() {
+    ManoVector<int> mv;
+    // Pridedame elementus į nuosavą vektorių
+    for (int i = 0; i < 100; ++i) {
+        mv.push_back(i);
+    }
+
+    // Sumažinama talpa iki dabartinio dydžio
+    mv.shrink_to_fit();
+    // Naudojama nuosavo vektoriaus capacity() funkcija
+    std::cout << "ManoVector dabartinė talpa po sumažinimo: " << mv.capacity() << std::endl;
+    return 0;
+}
+```
+
+Rezultatas, kurio tikimasi: ```ManoVector dabartinė talpa po sumažinimo: 100```
+
 
 
 ## Rezultatai
