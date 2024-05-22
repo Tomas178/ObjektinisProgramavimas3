@@ -22,13 +22,26 @@ int main() {
     for (int i = 0; i < 100; ++i) {
         mv.push_back(i);
     }
-
     // Naudojama nuosavo vektoriaus capacity() funkcija
-    std::cout << "Current capacity of ManoVector: " << mv.capacity() << std::endl;
-
+    std::cout << "ManoVector dabartinė talpa: " << mv.capacity() << std::endl;
     return 0;
-}
-```
+} ```
+
+### 2 Pavyzdys 
+```cpp
+#include <iostream>
+#include "ManoVector.h"
+
+int main() {
+    ManoVector<int> mv;
+    // Pridedame elementus į nuosavą vektorių
+    for (int i = 0; i < 100; ++i) {
+        mv.push_back(i);
+    }
+    // Naudojama nuosavo vektoriaus size() funkcija
+    std::cout << "ManoVector dabartinis dydis: " << mv.size() << std::endl;
+    return 0;
+} ```
 
 
 
