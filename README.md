@@ -14,7 +14,8 @@
 ### 1 Pavyzdys
 ```cpp
 #include <iostream>
-#include "ManoVector.h"
+#include <funkcijos.h>
+#include "Vector.h"
 
 int main() {
     ManoVector<Studentas> mv;
