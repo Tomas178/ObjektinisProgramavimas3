@@ -90,7 +90,7 @@ int main() {
     ManoVector<int> mv;
     // Pridedame elementus į nuosavą vektorių
     for (int i = 0; i < 100; ++i) {
-        mv.push_back(i);
+        mv.push_back(Studentas());
     }
 
     // Sumažinama talpa iki dabartinio dydžio

@@ -63,7 +63,6 @@ TEST(Vektoriaus_Member_Funkciju_Testavimas, initializer_list) {
     EXPECT_EQ(v[0], "Tomas");
     EXPECT_EQ(v[1], "Jonas");
     EXPECT_EQ(v[2], "Petras");
-
 }
 
 TEST(Vektoriaus_Member_Funkciju_Testavimas, Move_Operatorius) {
