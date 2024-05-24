@@ -17,13 +17,16 @@
 #include "ManoVector.h"
 
 int main() {
-    ManoVector<int> mv;
-    // Pridedame elementus į nuosavą vektorių
+    ManoVector<Studentas> mv;
+
+    // Pridedame studentus į nuosavą vektorių
     for (int i = 0; i < 100; ++i) {
-        mv.push_back(i);
+        mv.push_back(Studentas("Vardas" + std::to_string(i), "Pavarde" + std::to_string(i)));
     }
+
     // Naudojama nuosavo vektoriaus capacity() funkcija
     std::cout << "ManoVector dabartinė talpa: " << mv.capacity() << std::endl;
+
     return 0;
 }
 ```
